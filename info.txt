@@ -1,3 +1,4 @@
+                                    Вступ
 1. Запуск проєкту: npm run dev - в консолі
    або
    налаштувати Run > Edit Configurations > + > npm > run, script - dev!
