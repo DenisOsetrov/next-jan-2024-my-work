@@ -1,10 +1,23 @@
 import React from 'react';
-import Link from "next/link";
 
-const UsersPage = () => {
+interface IUser {
+    name: string;
+    id: number;
+}
+
+const UsersPage = async () => {
+
+    let allUsers = await fetch('https://jsonplaceholder.typicode.com/users')
+        .then(value => value.json())
+
     return (
         <div>
-            UsersPage - all component!
+            <ul>
+                {allUsers.map((user: IUser) => (
+                    <li key={user.id}>
+                        {user.id} {user.name}
+                    </li>))}
+            </ul>
         </div>
     );
 };
