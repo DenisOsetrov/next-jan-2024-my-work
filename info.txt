@@ -61,3 +61,5 @@
     - створимо const generateMetadata в users/id/layout
     - створимо layout в users/id
     - створимо const generateMetadata - яка буде повертати динамічні метадату - ({user.email})
+
+15. Побудуємо структуру, сервіси і динамічну метадату(id) для posts i comments.

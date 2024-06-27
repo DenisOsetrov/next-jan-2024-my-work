@@ -1,6 +1,7 @@
 import React from 'react';
-import {userService} from "@/services/api.service";
+import {userService} from "@/services/user.service";
 import UserComponent from "@/components/UserComponent";
+
 
 const UsersPage = async () =>{
 

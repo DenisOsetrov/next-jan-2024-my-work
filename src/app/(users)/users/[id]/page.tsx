@@ -1,5 +1,5 @@
 import React from 'react';
-import {userService} from "@/services/api.service";
+import {userService} from "@/services/user.service";
 
 type Params = {id: string};
 
