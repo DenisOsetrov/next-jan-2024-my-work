@@ -6,6 +6,9 @@ const MenuComponent = () => {
         <div>
             <ul>
                 <li>
+                    <Link href={'/'}>HOME</Link>
+                </li>
+                <li>
                     <Link href={'/users'}>Users</Link>
                 </li>
                 {/*<li>*/}

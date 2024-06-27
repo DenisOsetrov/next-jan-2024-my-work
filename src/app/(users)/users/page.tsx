@@ -1,21 +1,18 @@
 import React from 'react';
+import {userService} from "@/services/api.service";
+import UserComponent from "@/components/UserComponent";
 
-interface IUser {
-    name: string;
-    id: number;
-}
+const UsersPage = async () =>{
 
-const UsersPage = async () => {
-
-    let allUsers = await fetch('https://jsonplaceholder.typicode.com/users')
-        .then(value => value.json())
+    let users = await userService.getAllUsers();
 
     return (
         <div>
+            <h3>This is a users page</h3>
             <ul>
-                {allUsers.map((user: IUser) => (
+                {users.map((user: IUser) => (
                     <li key={user.id}>
-                        {user.id} {user.name}
+                        <UserComponent user={user}/>
                     </li>))}
             </ul>
         </div>

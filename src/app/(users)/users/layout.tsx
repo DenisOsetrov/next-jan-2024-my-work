@@ -1,10 +1,17 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
+import {Metadata} from "next";
+// import {Metadata} from "next";
 
-type Props = {
-  children: ReactNode;
+// локальна метадата, що відображається на вкладці браузера - статична!!
+export const metadata: Metadata = {
+    title: "UserLayout",
+    description: "Local metadata in 'head' in html",
 };
 
-const UsersLayout: React.FC<Props> = ({ children }) => {
+
+type Props = {children: React.ReactNode};
+
+const UsersLayout = ({ children }:Props) => {
   return (
     <div>
                 Start UsersLayout - not component
