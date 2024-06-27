@@ -8,7 +8,8 @@ export const generateMetadata = async ({params}: { params: { id: string } }): Pr
 
     return {
         title: user.email,
-        description: user.email
+        description: user.email,
+
     }
 
 }
