@@ -3,15 +3,17 @@ import {userService} from "@/services/user.service";
 
 type Params = {id: string};
 
-const Page = async ({params}: {params:Params}) => {
+const UserPage = async ({params}: {params:Params}) => {
 
     const user = await userService.getUserById(params.id);
 
     return (
         <div>
-            {user?.id}. {user?.name}. Email: {user?.email}
+            <h4>{user?.id}. {user?.name}</h4>
+            <h5>Email: {user?.email}</h5>
+            <h5>Username: {user?.username}</h5>
         </div>
     );
 };
 
-export default Page;
+export default UserPage;

@@ -9,7 +9,7 @@ const UsersPage = async () =>{
 
     return (
         <div>
-            <h3>This is a users page</h3>
+            UsersPage
             <ul>
                 {users.map((user: IUser) => (
                     <li key={user.id}>

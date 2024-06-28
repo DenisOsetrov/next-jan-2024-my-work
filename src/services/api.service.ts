@@ -11,6 +11,10 @@ export const urlBuilder = {
     postsBaseUrl: '/posts',
     allPosts: () => base + urlBuilder.postsBaseUrl,
     singlePost: (id: string | number) => base + urlBuilder.postsBaseUrl + '/' + id,
+    // comments
+    commentsBaseUrl: '/comments',
+    allComments: () => base + urlBuilder.commentsBaseUrl,
+    singleComment: (id: string | number) => base + urlBuilder.commentsBaseUrl + '/' + id,
 }
 
 

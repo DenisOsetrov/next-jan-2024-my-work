@@ -7,8 +7,9 @@ const PostByIdPage = async ({params}: {params:Params}) => {
     const post = await postService.getPostById(params.id);
     return (
         <div>
-            <h4>{post?.id}. {post?.body}</h4>
-            <p>{post?.title}</p>
+            <h4>№{post?.id}.</h4>
+            <h5>{post?.body}</h5>
+            <p>Title: {post?.title}</p>
         </div>
     );
 };

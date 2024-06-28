@@ -8,11 +8,11 @@ export const metadata: Metadata = {
 type Props = {children: ReactNode};
 
 const PostsLayout: React.FC<Props> = ({ children }) => {
-  return (
-    <div>
-      {children}
-    </div>
-  );
+    return (
+        <div>
+            {children}
+        </div>
+    );
 };
 
 export default PostsLayout;

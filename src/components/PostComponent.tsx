@@ -8,7 +8,7 @@ const PostComponent: FC<IProps> = ({post}) => {
     return (
         <div>
             {/*тут автоматично переносить на /posts/id - комп. PostByIdPage*/}
-            <Link href={`/posts/${post.id}`}>{post.id}. {post.title}</Link>
+            <Link href={`/posts/${post.id}`}>{post.id}. {post.body}</Link>
         </div>
     );
 };
