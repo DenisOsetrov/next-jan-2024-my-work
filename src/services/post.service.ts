@@ -1,6 +1,6 @@
 import {urlBuilder} from "@/services/api.service";
 
-const postService = {
+export const postService = {
 
     getAllPosts: async (): Promise<IPost[]> => {
         try {

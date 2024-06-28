@@ -8,7 +8,7 @@ export const urlBuilder = {
     allUsers: () => base + urlBuilder.usersBaseUrl,
     singleUser: (id: string | number) => base + urlBuilder.usersBaseUrl + '/' + id,
     // posts path
-    postsBaseUrl: 'posts',
+    postsBaseUrl: '/posts',
     allPosts: () => base + urlBuilder.postsBaseUrl,
     singlePost: (id: string | number) => base + urlBuilder.postsBaseUrl + '/' + id,
 }

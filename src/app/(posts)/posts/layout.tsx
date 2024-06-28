@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 type Props = {children: ReactNode};
 
-const UsersLayout: React.FC<Props> = ({ children }) => {
+const PostsLayout: React.FC<Props> = ({ children }) => {
   return (
     <div>
       {children}
@@ -15,4 +15,4 @@ const UsersLayout: React.FC<Props> = ({ children }) => {
   );
 };
 
-export default UsersLayout;
+export default PostsLayout;
