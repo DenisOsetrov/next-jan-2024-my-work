@@ -4,6 +4,7 @@ import {userService} from "@/services/user.service";
 type Params = {id: string};
 
 const UserPage = async ({params}: {params:Params}) => {
+//const UserPage: FC<IProps> = async (params:{id}) => {     // або interface IProps {params:{id:string}}
 
     const user = await userService.getUserById(params.id);
 
