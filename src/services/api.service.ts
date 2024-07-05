@@ -3,7 +3,7 @@ const base: string = 'https://jsonplaceholder.typicode.com';
 const urlBuilder = {
     userBaseUrl: '/users',
     allUsers: () => base + urlBuilder.userBaseUrl,
-    singleUser: (id: number) => base + urlBuilder.userBaseUrl + '/' + id
+    // singleUser: (id: number) => base + urlBuilder.userBaseUrl + '/' + id
 
 }
 
